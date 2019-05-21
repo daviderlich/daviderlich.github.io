@@ -64,5 +64,5 @@ function draw() {
   rotateX(frameCount * 0.11);
   rotateY(frameCount * 0.11);
   noStroke();
-  sphere(100, 10, 90)
+  sphere(100, 10, 24)
 }
