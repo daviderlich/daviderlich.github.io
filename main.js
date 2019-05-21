@@ -1,4 +1,4 @@
-/*let x;
+let x;
 let y;
 
 let xspeed;
@@ -53,8 +53,8 @@ function draw() {
     y = 0;
     pickColor();
   }
-}*/
-function setup() {
+}
+/*function setup() {
   createCanvas(500, 500, WEBGL);
   fill(random(255), random(255), random(255))
 }
@@ -65,4 +65,4 @@ function draw() {
   rotateY(frameCount * 0.11);
   noStroke();
   sphere(100, 10, 24)
-}
+}*/
