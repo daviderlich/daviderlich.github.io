@@ -8,7 +8,15 @@
     <meta charset="utf-8" />
 <!DOCTYPE html>
     
-    <!--iframe width="560" height="315" src="https://www.youtube.com/embed/_t0ZBAk72K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe-->
+   <p id="demo" onclick="myFunction()">Click me to change my text color.</p>
+
+<p>A function is triggered when the p element is clicked. The function sets the color of the p element to white.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.color = "white";
+}
+</script>
   </head>
   <body>
     <script src="main.js"></script>
