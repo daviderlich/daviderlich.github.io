@@ -1,1 +1,1 @@
-This is my website created for my computer programming course. It is a bit basic, however, if you have any suggestions, let me know.
+This is my website created for my computer programming course. For this project, I made a website that contains the spoilers to all of the movies in the Current Marvel Cinematic Universe as of May, 2019.
