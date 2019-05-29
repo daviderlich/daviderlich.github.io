@@ -40,7 +40,7 @@ function Symbol(x, y, speed, first, opacity) {
     if (frameCount % this.switchInterval == 0) {
       if (charType >= 3) {
         this.value = String.fromCharCode(
-          0x0A20 + round(random(0, 96))
+          0x30A0 + round(random(0, 96))
         );
     }
   }
