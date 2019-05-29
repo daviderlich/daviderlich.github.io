@@ -53,7 +53,7 @@ function Symbol(x, y, speed, first, opacity) {
 
 function Stream() {
   this.symbols = [];
-  this.totalSymbols = round(random(5, 35));
+  this.totalSymbols = round(random(5, 10));
   this.speed = random(5, 22);
 
   this.generateSymbols = function(x, y) {
