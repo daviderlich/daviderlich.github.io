@@ -3,9 +3,7 @@ var fadeInterval = 1.6;
 var symbolSize = 20;
 
 function setup() {
-  createCanvas(
-    windowWidth, 100
-  );
+  createCanvas(1000, 100);
   background(0);
 
   var x = 0;
