@@ -41,4 +41,7 @@ canvas {
   padding: 16px;
   font-size: 16px;
   border: none;
+  color: black;
+  text-decoration: none;
+  display: block;
 }
