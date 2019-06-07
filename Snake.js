@@ -16,7 +16,7 @@ let h = 180;
 
 function setup() {
   scoreElem = createDiv('Score = 0');
-  scoreElem.position(200, 200);
+  scoreElem.position(20, 1000);
   scoreElem.id = 'score';
   scoreElem.style('color', 'white');
   createCanvas(700, 500);
