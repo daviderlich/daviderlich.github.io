@@ -1,9 +1,8 @@
-// the snake is divided into small segments, which are drawn and edited on each 'draw' call
 var numSegments = 10;
 var direction = 'right';
 
-var xStart = 0; //starting x coordinate for snake
-var yStart = 250; //starting y coordinate for snake
+var xStart = 0; 
+var yStart = 250; 
 var diff = 10;
 
 var xCor = [];
@@ -50,17 +49,6 @@ function draw() {
   checkForFruit();
 }
 
-/*
- The segments are updated based on the direction of the snake.
- All segments from 0 to n-1 are just copied over to 1 till n, i.e. segment 0
- gets the value of segment 1, segment 1 gets the value of segment 2, and so on,
- and this results in the movement of the snake.
-
- The last segment is added based on the direction in which the snake is going,
- if it's going left or right, the last segment's x coordinate is increased by a
- predefined value 'diff' than its second to last segment. And if it's going up
- or down, the segment's y coordinate is affected.
-*/
 function updateSnakeCoordinates() {
 
   for (var i = 0; i < numSegments - 1; i++) {
@@ -87,11 +75,6 @@ function updateSnakeCoordinates() {
   }
 }
 
-/*
- I always check the snake's head position xCor[xCor.length - 1] and
- yCor[yCor.length - 1] to see if it touches the game's boundaries
- or if the snake hits itself.
-*/
 function checkGameStatus() {
   if (xCor[xCor.length - 1] > width ||
       xCor[xCor.length - 1] < 0 ||
@@ -104,10 +87,6 @@ function checkGameStatus() {
   }
 }
 
-/*
- If the snake hits itself, that means the snake head's (x,y) coordinate
- has to be the same as one of its own segment's (x,y) coordinate.
-*/
 function checkSnakeCollision() {
   var snakeHeadX = xCor[xCor.length - 1];
   var snakeHeadY = yCor[yCor.length - 1];
@@ -118,11 +97,6 @@ function checkSnakeCollision() {
   }
 }
 
-/*
- Whenever the snake consumes a fruit, I increment the number of segments,
- and just insert the tail segment again at the start of the array (basically
- I add the last segment again at the tail, thereby extending the tail)
-*/
 function checkForFruit() {
   point(xFruit, yFruit);
   if (xCor[xCor.length - 1] === xFruit && yCor[yCor.length - 1] === yFruit) {
@@ -136,11 +110,6 @@ function checkForFruit() {
 }
 
 function updateFruitCoordinates() {
-  /*
-    The complex math logic is because I wanted the point to lie
-    in between 100 and width-100, and be rounded off to the nearest
-    number divisible by 10, since I move the snake in multiples of 10.
-  */
 
   xFruit = floor(random(10, (width - 100) / 10)) * 10;
   yFruit = floor(random(10, (height - 100) / 10)) * 10;
