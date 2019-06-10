@@ -1,21 +1,12 @@
-function setup(){
-  createCanvas(710, 600, WEBGL);
+function setup() {
+  createCanvas(500, 500, WEBGL);
+  fill(random(255), random(255), random(255))
 }
 
-function draw(){
-  background(250);
-  rotateY(frameCount * 0.01);
-
-  for(var j = 0.31; j < 15.310; j++){
-    push();
-    for(var i = 0; i < 80; i++){
-      fill(random(255), random(255), random(255));
-      translate(sin(frameCount * 0.01 + j) * 100, sin(frameCount * 0.001 + j) * 100, i * 0.1);
-      rotateZ(frameCount * 0.002);
-      push();
-      sphere(15, 5, 5); 
-      pop();
-    }
-    pop();
-  }
+function draw() {
+  background(200);
+  rotateX(frameCount * 0.11);
+  rotateY(frameCount * 0.11);
+  noStroke();
+  sphere(100, 10, 90)
 }
