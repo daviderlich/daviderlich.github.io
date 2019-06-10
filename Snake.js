@@ -46,7 +46,7 @@ function draw() {
   
   
   if (snake.endGame()) {
-  	print("END GAME");
+  	print("GAME OVER");
     background(255, 0, 0);
     noLoop();
   }
