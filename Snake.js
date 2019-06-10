@@ -20,7 +20,6 @@ function setup() {
   scoreElem.id = 'score';
   scoreElem.style('color', 'white');
   createCanvas(700, 500);
-  colorMode(HSB)
   strokeWeight(10);
   updateFruitCoordinates();
 
@@ -37,11 +36,8 @@ function draw() {
   background(h,100,70,);
   for (var i = 0; i < numSegments - 1; i++) {
     line(xCor[i], yCor[i], xCor[i + 1], yCor[i + 1]);
-  if (mouseIsPressed) {
-    frameRate(60)
-  } else {
-    frameRate(18)
-  }
+  frameRate(18)
+  
   
   }
   updateSnakeCoordinates();
