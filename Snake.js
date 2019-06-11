@@ -46,12 +46,11 @@ function draw() {
   
   
   if (snake.endGame()) {
-  	print("GAME OVER");
-    background(255, 0, 0);
+    background(255, 10, 0);
     noLoop();
   }
   
   noStroke();
-  fill(255, 0, 0);
+  fill(100, 0, 200);
   rect(food.x, food.y, 1, 1);
 }
