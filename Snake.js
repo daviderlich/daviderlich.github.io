@@ -51,6 +51,6 @@ function draw() {
   }
   
   noStroke();
-  fill(100, 0, 200);
+  fill(0, 50, 200);
   rect(food.x, food.y, 1, 1);
 }
